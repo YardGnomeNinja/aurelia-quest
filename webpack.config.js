@@ -14,7 +14,7 @@ const when = (condition, config, negativeConfig) =>
   condition ? ensureArray(config) : ensureArray(negativeConfig);
 
 // primary config:
-const title = 'Aurelia Navigation Skeleton';
+const title = 'Aurelia Quest';
 const outDir = path.resolve(__dirname, project.platform.output);
 const srcDir = path.resolve(__dirname, 'src');
 const nodeModulesDir = path.resolve(__dirname, 'node_modules');
@@ -168,6 +168,12 @@ module.exports = ({ production, server, extractCss, coverage, analyze, karma } =
         // available in index.ejs //
         title, server, baseUrl
       }
+    }),
+    new ProvidePlugin({ 
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": 
+      "jquery"
     }),
     ...when(extractCss, new MiniCssExtractPlugin({
       filename: production ? '[contenthash].css' : '[id].css',

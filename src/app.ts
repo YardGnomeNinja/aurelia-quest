@@ -1,3 +1,5 @@
+import 'resources/css/aurelia-quest.css';
+
 export class App {
-  message = 'Hello World!';
+
 }
