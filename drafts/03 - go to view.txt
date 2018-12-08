@@ -1,0 +1,49 @@
+go to view
+	App.ts
+		import { PLATFORM } from "aurelia-framework";
+		import { Router } from 'aurelia-router';
+
+		export class App {
+			router: Router;
+
+			configureRouter(config, router) {
+				this.router = router;
+				config.title = 'My New Project';
+				config.options.pushState = true;
+				config.options.root = '/';
+
+				config.map([
+					{ route: ['', 'view1'],	name: 'view1',	moduleId: PLATFORM.moduleName('view1') },
+					{ route: ['view2'],		name: 'view2',	moduleId: PLATFORM.moduleName('view2') }
+				);
+			}
+		}
+	
+	App.html
+		<template>
+			<div>
+				<a router-href="route: view1">View 1</a>
+			</div>
+			<div>
+				<a router-href="route: view2">View 2</a>
+			</div>
+			<div>
+				<router-view></router-view>
+			</div>
+		</template>
+
+	view1.ts
+		export class View1 {}
+		
+	view1.html
+		<template>
+			View 1
+		</template>
+		
+	view2.ts
+		export class View2 {}
+		
+	view2.html
+		<template>
+			View 2
+		</template>

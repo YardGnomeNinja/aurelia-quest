@@ -1,0 +1,89 @@
+use binding
+	Let's look at how the "Hello World!" message is being displayed and tweak it.
+	
+	If it's not already running, get the site going by executing the command
+		`au run`
+
+	Open the project folder	in VSCode
+		Click the "Open Folder" button the left-hand side of VSCode.
+			Note: If you do not see the button, click the Explorer button in the top left or click the menu View > Explorer.
+			
+		Navigate to inside your project folder and click "Select Folder" button.
+		
+		The Explorer will display the project files created by the Aurelia CLI.
+			Protip: 
+				For a nice VSCode extension regarding the Explorer, check out 'vscode-icons'. 
+				For instructions on managing extensions visit the VSCode documentation. https://code.visualstudio.com/docs/editor/extension-gallery
+			
+			INT + 1
+				For a more in-depth view at the folders and their files, visit (What is all this crap? DOCUMENT LINK)
+				
+	Expand the src folder in the Explorer
+		INT + 1
+			The src folder (and deeper) is where you will spend the vast majority of your development time. For more insight into the project structure (Aurelia Project Structure DOCUMENT LINK)
+	
+	Click app.ts in the Explorer
+		INT + 1
+			This is a "model" file. It contains the variables and methods/functions you will use to display dynamic content and react to user input. Aurelia links this with the "view" file app.html by naming convention. Aurelia will automatically assume a TypeScript file and an HTML file sharing the same name, in the same folder, are associated in a model/view relationship. This can be overridden if required.
+
+		INT + 1
+			`export class App { }` defines a "module". https://www.typescriptlang.org/docs/handbook/modules.html
+			
+	Change `World` to your name. But don't save yet.
+	
+		Before we continue, I want you to see something pretty cool.
+	
+		Ensure the browser text "Hello World!" is visible while having VSCode as the focus in the foreground. Do whatever window gymnastics you must to accomplish this.
+	
+	Save and behold.
+	
+	How cool was that?
+	
+	Okay, moving on.
+	
+	Click app.html in the Explorer
+		INT + 1
+			This is a "view" file. It contains the display elements that will be shown to the user. As stated in the above INT + 1, Aurelia links this with the "model" file app.ts by naming convention. Aurelia will automatically assume a TypeScript file and an HTML file sharing the same name, in the same folder, are associated in a model/view relationship. This can be overridden if required.
+
+		INT + 1
+			The `<template>` element is used to define client-side content that is not to be rendered when a page is loaded but may subsequently be instantiated during runtime using client-side script. Learn more at https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template 
+			
+	Take notice of `${message}`
+		
+	Now jump back to app.ts, and notice `message = 'Hello <You>!';`
+		As you can see, `${message}` outputs the content of `message`.
+			INT + 1
+				This is called "string interpolation".
+
+	Okay, that's neat and quite useful, but let's try something more interesting.
+	
+	Two last housekeeping tasks before we jump to the next bit. 
+	
+	First, take a look at the tab name. I doubt you'll want to leave it as 'Aurelia Navigation Skeleton' (or whatever it may have changed to by the time you read this). This is easy to rectify. 
+	
+	Open `webpack.config.js` in the root of the project, you should find a line similar to `const title = 'Aurelia Navigation Skeleton';`. 
+	Replace the text in quotes and save.
+	
+	The site didn't auto-reload, did it? That's because only certain files are being watched for reload and `webpack.config.js` is not one of them. It is a configuration file for specifying how the modules (like App.ts) are loaded, among other things. As such, its reason for existing happens before the site is ready. I believe, correct me if I'm wrong if you know, by default only files in the `src` folder and deeper are being watched.
+	
+	Click into the command line terminal and hold `CTRL` and press `c`, the press `y` to terminate. You will return to the command line.
+	
+	Simply run the project again.
+		`au run`
+
+	You should now see the title has changed.
+	
+	Second, we're going to comment out the unit test that was created by the wizard. If we don't, when we change App.ts in the next section, the test will fail and dreaded red text will appear in the terminal. At this stage of learning, testing might be jumping the gun a bit. More on testing at a future date.
+	
+	Open /test/unit/app.spec.ts
+	
+	Highlight the entire content of the file, CTRL + A
+	
+	Comment the entirety of the content, CTRL K then CTRL C
+	
+	This should keep the test runner quiet for now.
+	
+	-- Binding --
+		
+		
+		

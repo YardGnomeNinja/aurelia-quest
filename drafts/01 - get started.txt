@@ -1,0 +1,131 @@
+get started
+	Forward:
+		The follwing steps will take you from zero to a running Aurelia app.
+		
+		This is a strongly opinionated tutorial, intended for people who just want to dive in as fast as possible and attempts to assume as little as possible about skill level.
+			If you know enough to have an opinion on any of the following steps, I suspect you know enough to substitute any recommendations below with your own preferences.
+		
+		There are a number of collapsed sections scattered throughout the documentation.
+			A "Protip" is intended to be something helpful to make your life easier.
+			An "INT + 1" is intended to be something to increase your knowledge, but not required reading to get the job done. 
+				I'd recommend coming back to these once you feel more comfortable with the basics.
+			A "WIS + 1" is intended to be something you should consider doing to improve the overall quality of your project.
+				I'd recommend coming back to these once you feel more comfortable with the basics.
+				
+Install Visual Studio Code
+	https://code.visualstudio.com/
+	
+	
+Install Node - includes NPM (Node Package Manager):
+	https://nodejs.org/en/download/
+
+	INT + 1
+		The current version of Node can be checked via command line:
+			node -v
+	
+	INT + 1	
+		The current version of NPM can be checked via command line:
+			npm -v
+
+		
+Open Visual Studio Code
+	Open the command line terminal
+		Hold CTRL and press ` (backtick/grave, shares the same key as ~ tilde, to the left of the number 1 key) 
+		OR
+		Click the menu View > Terminal
+		
+		Ensure the dropdown list to the top-right has Powershell selected.
+		
+		For more info see the VSCode documentation (https://code.visualstudio.com/docs/editor/integrated-terminal)
+
+	
+Install TypeScript
+	In the VSCode terminal, execute:
+		npm install -g typescript
+
+	INT + 1
+		The current version of the Aurelia CLI can be checked via command line:
+			tsc -v
+
+
+Install Aurelia CLI:
+	In the VSCode terminal, execute:
+		npm install -g aurelia-cli
+	
+	INT + 1:
+		-g denotes a "global" install. This means the commands provided by the package will be available to you regardless of the folder you execute it from.
+		
+	INT + 1:
+		When an Aurelia CLI project is created, it will receive its own "local" copy of the Aurelia CLI.
+			This ensures your project will not experience any unexpected issues if you decide to update the global install in order to create new projects using a newer version of the CLI.
+	
+	INT + 1:
+		The current version of the Aurelia CLI can be checked via command line:
+			au -v
+
+		
+Start a new Aurelia project:
+	In the VSCode terminal:
+		Navigate to the location where you wish to store your project. e.g. c:\src\ If you need command line navigation help see this article (https://www.digitalcitizen.life/command-prompt-how-use-basic-commands)
+			Note: The new project will be created as a subfolder. e.g. c:\src\my-new-project
+			
+			Protip:
+				If you plan to store your new project in a Git repository (Link to GitHub and Git docs), my personal preference is to create and clone the repository locally before creating the new project. (Git Tools and Tips DOCUMENT LINK)
+	
+		Execute the command
+			au new <my-new-project>
+	
+		The wizard will ask you some questions about your project. 
+			Note: As devlopment of the CLI continues, the order of questions and available options may change. 
+			The following are the options I recommend as of version 1.0.0-beta7 (2018/12/01) and will be using for the documentation herein:
+			
+			Would you like to use the default setup or customize your choices?
+				Custom
+			
+			Which module loader / bundler would you like to use?
+				Webpack
+			
+			What platform are you targeting?
+				Web
+				
+			What transpiler would you like to use?
+				TypeScript
+				
+			How would you like to setup your template?
+				Minimum Minification
+				
+			What css processor would you like to use?
+				Sass
+				
+			Which unit test runners would you like to use?
+				Jest
+				
+			Would you like to configure integration testing?
+				Protractor
+				
+			What is your default code editor?
+				Visual Studio Code
+				
+		NOTE: If you are creating a project and the folder already exists, for example you followed my preference and cloned the Git repository locally, you will receive the WARNING step instead of this one.
+			Would you like to create this project?
+				Yes
+				
+			WARNING: The 'my-new-project' folder already exists. Would you like to create the project in this folder?
+				Yes
+				
+			Would you like to install the project dependencies?
+				Yes
+		
+		Navigate into the project folder via the command line
+		
+		Execute the command
+			au run
+		
+	Open your favorite browser and navigate to
+		http://localhost:8080
+		
+	You should see a "Hello World!" message.
+	
+	If you wish, you can stop the Webpack Dev Server by clicking into the command line terminal and hold `CTRL` and press `c`, the press `y` to terminate. You will return to the command line. Remember to execute `au run` if you want to start it again.
+
+	Now the real fun begins... (Hello <You>! DOCUMENT LINK)

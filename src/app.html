@@ -11,7 +11,7 @@
                     <li>
                         Prelude
                         <ul class="submenu">
-                            <li>look at me</li>
+                            <li><a route-href="route: look-at-me">look at me</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -19,10 +19,10 @@
                     <li>
                         Level 1
                         <ul class="submenu">
-                            <li>get started</li>
-                            <li>use binding</li>
-                            <li>go to view</li>
-                            <li>give makeover</li>
+                            <li><a route-href="route: get-started">get started</a></li>
+                            <li><a route-href="route: use-binding">use binding</a></li>
+                            <li><a route-href="route: go-to-view">go to view</a></li>
+                            <li><a route-href="route: give-makeover">give makeover</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -30,11 +30,11 @@
                     <li>
                         Level 2
                         <ul class="submenu">
-                            <li>use inject</li>
-                            <li>open dialog</li>
-                            <li>pub and sub</li>
-                            <li>talk to service</li>
-                            <li>test with jest</li>
+                            <li><a route-href="route: use-inject">use inject</a></li>
+                            <li><a route-href="route: open-dialog">open dialog</a></li>
+                            <li><a route-href="route: pub-and-sub">pub and sub</a></li>
+                            <li><a route-href="route: talk-to-service">talk to service</a></li>
+                            <li><a route-href="route: test-with-jest">test with jest</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -42,9 +42,9 @@
                     <li>
                         Level 3
                         <ul class="submenu">
-                            <li>auth with azure</li>
-                            <li>get azure profile</li>
-                            <li>get skype status</li>
+                            <li><a route-href="route: auth-with-azure">auth with azure</a></li>
+                            <li><a route-href="route: get-azure-profile">get azure profile</a></li>
+                            <li><a route-href="route: get-skype-status">get skype status</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -52,12 +52,12 @@
                     <li>
                         Weapon Shop
                         <ul class="submenu">
-                            <li>aurelia table</li>
-                            <li>moment.js</li>
-                            <li>numeral.js</li>
-                            <li>sweetalert2</li>
-                            <li>dragula</li>
-                            <li>reorderable-repeat</li>
+                            <li><a route-href="route: aurelia-table">aurelia table</a></li>
+                            <li><a route-href="route: moment-js">moment.js</a></li>
+                            <li><a route-href="route: numeral-js">numeral.js</a></li>
+                            <li><a route-href="route: sweetalert2">sweetalert2</a></li>
+                            <li><a route-href="route: dragula">dragula</a></li>
+                            <li><a route-href="route: reorderable-repeat">reorderable-repeat</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -65,18 +65,15 @@
                     <li>
                         Hint Book
                         <ul class="submenu">
-                            <li>get @types</li>
-                            <li>use npm</li>
-                            <li>look at loaders</li>
+                            <li><a route-href="route: get-types">get @types</a></li>
+                            <li><a route-href="route: use-npm">use npm</a></li>
+                            <li><a route-href="route: look-at-loaders">look at loaders</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
             <div class="col-9">
-                <fieldset>
-                    <legend>Content</legend>
-                    Content goes here.
-                </fieldset>
+                <router-view></router-view>
             </div>
         </div>
     </div>

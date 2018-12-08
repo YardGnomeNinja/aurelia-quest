@@ -1,0 +1,19 @@
+Why Aurelia?
+	Convention over configuration
+	I spend the vast majority of my development time writing business logic for applications.
+	I practically never even think about "how do I do this in Aurelia?". It's usually "how do I do this using TypeScript/JavaScript/JQuery". (Yes, I still lean on JQuery from time-to-time, mostly when using 3rd party libraries)
+
+Why not <insert name of thing here>?
+
+Why this site?
+	Speed and Focus
+		My hope is to create a springboard for learning. I don't intend to go into excrutiating detail about individual topics. I'm not that sort of developer.
+		My interest lies in learning (and teaching) how to use a tool to get work done.
+
+Who are you?
+	Developer
+	Interested in getting work done, not in being the expert in any one technology.
+	
+There's a better way. Why don't use do <x>?
+	I'd love to hear it. Please share. I don't claim to know everything nor that what I think I know is entirely correct. If I'm not using something that would make life easier, I probably simply
+	don't know about it and would love to hear from you.
