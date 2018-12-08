@@ -1,0 +1,95 @@
+Start Here
+	Forward:
+		Who are you?
+		Why Aurelia?
+		Why not <insert name of thing here>?
+		There's a better way?
+			I'd love to hear it. Please share. I don't claim to know everything nor that what I think I know is entirely correct...
+
+	Getting Started with the CLI:
+		From Zero to 'Hello World!'
+			npm!!
+		
+	Binding:
+		'Hello World!' to 'Hello <USER>!'
+		
+	Routing:
+		One View, Two View, Red View, Blue View
+		
+	Bootstrap, Fontawesome, SASS:
+		Make it 'pretty'
+		npm install @fortawesome/fontawesome-free 
+			5.2.0
+		npm install bootstrap@3.3.7
+		npm install bootstrap-sass@3.3.7
+
+		https://getbootstrap.com/
+		https://fontawesome.com/
+		https://sass-lang.com/guide
+
+		
+
+Getting Crazy
+	JQuery:
+		here come dat boi!!!!!!
+
+	Types (for TypeScript):
+		A blessing and a curse
+
+	Dependency Injection:
+		It's fucking magic!
+
+	EventAggregator:
+		Oh man! You're gonna love this!
+	
+	BindingSignaler
+		https://aurelia.io/docs/binding/binding-behaviors#signal
+		
+	moment.js:
+		You're older than you've ever been, and now you're even older...
+		https://momentjs.com/
+
+	numeral.js:
+		Formatting and manipulating numbers so you don't have to
+		http://numeraljs.com/
+
+	sweetalert2
+		Poppin' off
+		https://sweetalert2.github.io/
+		
+	Aurelia Table:
+		https://tochoromero.github.io/aurelia-table/
+
+	Dragula:
+		Dig through the ditches... 
+	
+	https://github.com/buttonwoodcx/bcx-aurelia-reorderable-repeat
+		An alternative to Dragula
+		
+	Fetch and HttpClient:
+		Get you some data
+		
+	Jest:
+		Getting testy
+		https://jestjs.io/
+		
+
+	http://www.bootstraptoggle.com/
+	
+Things I'd rather not think about, but sort of have to
+	npm:
+		Your new best friend
+		package.json
+			scripts
+
+	Loaders:
+		RequireJS
+		Webpack
+
+
+Insane Tricks
+	User Authentication with Microsoft Azure Active Directory:
+		adal-angular
+
+	Getting your Microsoft Active Directory User Profile image
+	Getting your Skype/Microsoft/Teams Availability Status
