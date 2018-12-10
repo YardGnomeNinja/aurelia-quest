@@ -1,6 +1,6 @@
 import { PLATFORM } from "aurelia-framework";
 import { Router } from 'aurelia-router';
-import 'resources/css/aurelia-quest.css';
+import 'resources/css/aurelia-quest.scss';
 
 export class App {
     router: Router;
@@ -21,15 +21,17 @@ export class App {
             { route: ['opendialog'],        name: 'open-dialog',        moduleId: PLATFORM.moduleName('resources/views/level-2/open-dialog') },
             { route: ['pubandsub'],         name: 'pub-and-sub',        moduleId: PLATFORM.moduleName('resources/views/level-2/pub-and-sub') },
             { route: ['talktoservice'],     name: 'talk-to-service',    moduleId: PLATFORM.moduleName('resources/views/level-2/talk-to-service') },
+            { route: ['refreshbinding'],    name: 'refresh-binding',    moduleId: PLATFORM.moduleName('resources/views/level-2/refresh-binding') },
             { route: ['testwithjest'],      name: 'test-with-jest',     moduleId: PLATFORM.moduleName('resources/views/level-2/test-with-jest') },
             { route: ['authwithazure'],     name: 'auth-with-azure',    moduleId: PLATFORM.moduleName('resources/views/level-3/auth-with-azure') },
             { route: ['getazureprofile'],   name: 'get-azure-profile',  moduleId: PLATFORM.moduleName('resources/views/level-3/get-azure-profile') },
             { route: ['getskypestatus'],    name: 'get-skype-status',   moduleId: PLATFORM.moduleName('resources/views/level-3/get-skype-status') },
             { route: ['aureliatable'],      name: 'aurelia-table',      moduleId: PLATFORM.moduleName('resources/views/weapon-shop/aurelia-table') },
+            { route: ['bootstraptoggle'],   name: 'bootstrap-toggle',   moduleId: PLATFORM.moduleName('resources/views/weapon-shop/bootstrap-toggle') },
+            { route: ['dragula'],           name: 'dragula',            moduleId: PLATFORM.moduleName('resources/views/weapon-shop/dragula') },
             { route: ['momentjs'],          name: 'moment-js',          moduleId: PLATFORM.moduleName('resources/views/weapon-shop/moment-js') },
             { route: ['numeraljs'],         name: 'numeral-js',         moduleId: PLATFORM.moduleName('resources/views/weapon-shop/numeral-js') },
             { route: ['sweetalert2'],       name: 'sweetalert2',        moduleId: PLATFORM.moduleName('resources/views/weapon-shop/sweetalert2') },
-            { route: ['dragula'],           name: 'dragula',            moduleId: PLATFORM.moduleName('resources/views/weapon-shop/dragula') },
             { route: ['reorderablerepeat'], name: 'reorderable-repeat', moduleId: PLATFORM.moduleName('resources/views/weapon-shop/reorderable-repeat') },
             { route: ['gettypes'],          name: 'get-types',          moduleId: PLATFORM.moduleName('resources/views/hint-book/get-types') },
             { route: ['usenpm'],            name: 'use-npm',            moduleId: PLATFORM.moduleName('resources/views/hint-book/use-npm') },

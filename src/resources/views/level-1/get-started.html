@@ -1,6 +1,197 @@
 <template>
-    <fieldset>
-        <legend>get started</legend>
-        Content goes here.
-    </fieldset>
+    <div class="text-center">
+        <h1>get started</h1>
+    </div>
+    <div>
+        <fieldset>
+            <legend>
+                <a class="btn btn-primary" data-toggle="collapse" href="#get-started-tldr" role="button" aria-expanded="false" aria-controls="get-started-tldr">
+                    tldr;
+                </a>
+            </legend>
+            <div class="collapse" id="get-started-tldr">
+                <ol>
+                    <li><a href="https://code.visualstudio.com/" target="_blank">Install Visual Studio Code</a></li>
+                    <li><a href="https://nodejs.org/en/download/" target="_blank">Install Node and NPM (Node Package Manager)</a></li>
+                    <li>Install TypeScript: <span class="command-line">npm install -g typescript</span></li>
+                    <li>Install Aurelia CLI: <span class="command-line">npm install -g aurelia-cli</span></li>
+                    <li>
+                        Create new Aurelia project: <span class="command-line">au new &lt;my-new-project&gt;</span>
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>Custom</li>
+                            <li>Webpack</li>
+                            <li>Web</li>
+                            <li>TypeScript</li>
+                            <li>Minimum Minification</li>
+                            <li>Sass</li>
+                            <li>Jest</li>
+                            <li>Protractor</li>
+                            <li>Visual Studio Code</li>
+                            <li>Yes</li>
+                            <li>Yes</li>            
+                        </ol>
+                    </li>
+                    <li><span class="command-line">cd &lt;my-new-project&gt;</span></li>
+                    <li><span class="command-line">au run</span></li>
+                    <li>Visit via browser: http://localhost:8080</li>
+                </ol>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <a class="btn btn-primary" data-toggle="collapse" href="#get-started-verbose" role="button" aria-expanded="false" aria-controls="get-started-verbose">
+                    verbose
+                </a>
+            </legend>
+            <div class="collapse show" id="get-started-verbose">
+                <ol>
+                    <li><a href="https://code.visualstudio.com/" target="_blank">Install Visual Studio Code</a></li>
+                    <li>
+                        <a href="https://nodejs.org/en/download/" target="_blank">Install Node and NPM (Node Package Manager)</a>
+                        <fieldset>
+                            <legend>
+                                <a class="btn btn-info" data-toggle="collapse" href="#get-started-int1-node-version" role="button" aria-expanded="false" aria-controls="get-started-int1-node-version">
+                                    INT + 1
+                                </a>
+                            </legend>
+                            <div class="collapse" id="get-started-int1-node-version">
+                                The current version of Node can be checked via command line: <span class="command-line">node -v</span>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>
+                                <a class="btn btn-info" data-toggle="collapse" href="#get-started-int1-npm-version" role="button" aria-expanded="false" aria-controls="get-started-int1-npm-version">
+                                    INT + 1
+                                </a>
+                            </legend>
+                            <div class="collapse" id="get-started-int1-npm-version">
+                                The current version of NPM can be checked via command line: <span class="command-line">npm -v</span>
+                            </div>
+                        </fieldset>
+                    </li>
+                    <li>
+                        Open Visual Studio Code
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>
+                                Open the command line terminal
+                                <ul style="list-style-type: none;">
+                                    <li>Hold CTRL and press ` (backtick/grave)</li>
+                                    <li style="padding-left: 50px;">OR</li>
+                                    <li>
+                                        <p>Click the menu View > Terminal</p>
+                                        <p>Ensure the top-right dropdown list has Powershell selected.</p>
+                                        <p><a href="https://code.visualstudio.com/docs/editor/integrated-terminal" target="_blank">For more info see the VSCode documentation</a></p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        Install TypeScript
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>
+                                In the VSCode terminal: <span class="command-line">npm install -g typescript</span>
+                                <fieldset>
+                                    <legend>
+                                        <a class="btn btn-info" data-toggle="collapse" href="#get-started-int1-tsc-version" role="button" aria-expanded="false" aria-controls="get-started-int1-tsc-version">
+                                            INT + 1
+                                        </a>
+                                    </legend>
+                                    <div class="collapse" id="get-started-int1-tsc-version">
+                                        The current version of TypeScript can be checked via command line: <span class="command-line">tsc -v</span>
+                                    </div>
+                                </fieldset>
+                            </li>    
+                        </ol>
+                    </li>
+                    <li>
+                        Install Aurelia CLI
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>
+                                In the VSCode terminal: <span class="command-line">npm install -g aurelia-cli</span>
+                                <fieldset>
+                                    <legend>
+                                        <a class="btn btn-info" data-toggle="collapse" href="#get-started-int1-npm-global" role="button" aria-expanded="false" aria-controls="get-started-int1-npm-global">
+                                            INT + 1
+                                        </a>
+                                    </legend>
+                                    <div class="collapse" id="get-started-int1-npm-global">
+                                        The NPM flag <span class="command-line">-g</span> denotes a "global" install. This means the commands provided by the package will be available to you regardless of the folder you execute it from.
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>
+                                        <a class="btn btn-info" data-toggle="collapse" href="#get-started-int1-au-local" role="button" aria-expanded="false" aria-controls="get-started-int1-au-local">
+                                            INT + 1
+                                        </a>
+                                    </legend>
+                                    <div class="collapse" id="get-started-int1-au-local">
+                                        <p>When an Aurelia CLI project is created, the project folder will receive its own local copy of the Aurelia CLI.</p>
+                                        <p>This ensures your project will not experience any unexpected issues if you decide to update the global install in order to create new projects using a newer version of the CLI.</p>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>
+                                        <a class="btn btn-info" data-toggle="collapse" href="#get-started-int1-au-cli-version" role="button" aria-expanded="false" aria-controls="get-started-int1-au-cli-version">
+                                            INT + 1
+                                        </a>
+                                    </legend>
+                                    <div class="collapse" id="get-started-int1-au-cli-version">
+                                        The current version of the Aurelia CLI can be checked via command line: <span class="command-line">au -v</span>
+                                    </div>
+                                </fieldset>
+                            </li>    
+                        </ol>
+                    </li>
+                    <li>
+                        Start a new Aurelia project
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>
+                                In the VSCode terminal, navigate to the location where you wish to store your project. e.g. <span class="command-line">c:\src\</span>
+                                <p><a href="https://www.digitalcitizen.life/command-prompt-how-use-basic-commands" target="_blank">Command-line navigation help</a></p>
+                                <p>The new project will be created as a subfolder. e.g. <span class="command-line">c:\src\my-new-project</span></p>
+                                <fieldset>
+                                    <legend>
+                                        <a class="btn btn-info" data-toggle="collapse" href="#get-started-protip-git" role="button" aria-expanded="false" aria-controls="get-started-protip-git">
+                                            Protip
+                                        </a>
+                                    </legend>
+                                    <div class="collapse" id="get-started-protip-git">
+                                        <p>If you plan to store your new project in a <a href="http://github.com" target="_blank">Git repository</a>, now might be the best time to create and clone the repository locally before creating the new project.</p>
+                                    </div>
+                                </fieldset>
+                            </li>
+                            <li>
+                                In the VSCode terminal: <span class="command-line">au new &lt;my-new-project&gt;</span>
+                                <p>
+                                    <p>The wizard will ask you some questions about your project.</p>
+                                    <p>Note: As devlopment of the CLI continues, the order of questions and available options may change. 
+                                    The following are the options I recommend as of version 1.0.0-beta7 (2018/12/01) and will be using for the documentation herin.</p>
+                                    <ol style="list-style-type: lower-roman;">
+                                        <li>Would you like to use the default setup or customize your choices? <span class="command-line">Custom</span></li>
+                                        <li>Which module loader / bundler would you like to use? <span class="command-line">Webpack</span></li>
+                                        <li>What platform are you targeting? <span class="command-line">Web</span></li>
+                                        <li>What transpiler would you like to use? <span class="command-line">TypeScript</span></li>
+                                        <li>How would you like to setup your template? <span class="command-line">Minimum Minification</span></li>
+                                        <li>What css processor would you like to use? <span class="command-line">Sass</span></li>
+                                        <li>Which unit test runners would you like to use? <span class="command-line">Jest</span></li>
+                                        <li>Would you like to configure integration testing? <span class="command-line">Protractor</span></li>
+                                        <li>What is your default code editor? <span class="command-line">Visual Studio Code</span></li>
+                                        <li>Would you like to create this project? <span class="command-line">Yes</span></li>
+                                        <li>Would you like to install the project dependencies? <span class="command-line">Yes</span></li>
+                                    </ol>
+                                </p>
+                            </li>
+                            <li>In the VSCode terminal: <span class="command-line">cd &lt;my-new-project&gt;</span></li>
+                            <li>In the VSCode terminal: <span class="command-line">au run</span></li>
+                        </ol>
+                    </li>
+                    <li>Open your favorite browser and navigate to: <span class="command-line">http://localhost:8080</span></li>
+                </ol>
+                <p>You should see a "Hello World!" message.</p>
+                <p>You can stop the Webpack Dev Server by clicking into the command line terminal, hold `CTRL` and press `c`, then press `y` to terminate. You will return to the command line. Remember to execute `au run` if you want to start it again.</p>
+                <p><a route-href="route: use-binding">Now the real fun begins...</a></p>
+            </div>
+        </fieldset>
+    </div>
 </template>
